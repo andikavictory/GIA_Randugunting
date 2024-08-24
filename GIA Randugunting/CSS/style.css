@@ -1,0 +1,364 @@
+/* Navbar Menu */
+body {
+    height: 300vh;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #333;
+    
+}
+
+nav{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    padding-top: 5vh;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(29, 31, 34, 0.3);
+}
+
+nav .logo{
+    margin-right: 23px;
+}
+nav .logo img{
+    margin-top: -50px;
+    margin-left: 40px;
+    width: 130px;
+    height: auto;
+    opacity: 80%;
+}
+
+nav ul{
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 0px 50px 20px;
+    font-size: 20px;
+    color: #F5F5F5;
+
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+
+nav ul li:hover{
+    color: rgb(76, 189, 255);
+    cursor: pointer;
+}
+nav ul li:hover::after{
+    width: 100%;
+    left: 0%;
+    transform: scaleX(1);
+
+}
+
+nav .login{
+    position:absolute;
+    margin-right: 110px;
+    margin-top: -30px;
+    padding: 10px 10px;
+    width: 75px;
+    font-size: 30px;
+    height: auto;
+    color: #F5F5F5;
+    right: 0;
+    border: 2px solid rgb(22, 83, 175, 0.3);
+    border-radius: 20%;
+    background-color: rgb(22, 83, 175, 0.3);
+    box-shadow: 4px 4px 7px black;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav .login:active{
+    transform: scale(0.9);
+    background-color: #f5f5f5;
+    color:  rgb(22, 83, 175);
+    border: 2px solid #F5F5F5;
+}
+/* Hero Section */
+
+section.hero {
+    position: relative;
+    padding-top:200px;
+    width: 100%;
+    height: 740px;
+    text-align: center;
+    background-image: url(..//img/background2.jpg);
+    background-size: cover;
+}
+
+section.hero .efek-transparancy{
+    position:absolute;
+    background:linear-gradient(to bottom, rgb(255, 255, 255,0), rgb(255, 255, 255,1)80%);
+    width: 100%;
+    height: 35%;
+    margin-top: 460px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.hero .hero-content h2{
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(4, 40, 95, 0.9);
+    text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
+    margin-bottom: 30px;
+}
+
+.hero .hero-content h1{
+    font-size: 120px;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(4, 38, 90, 0.9);
+    text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
+}
+
+.hero .hero-content h4{
+    font-size: 25px;
+    font-style: italic;
+    margin-top: -40px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(4, 38, 90, 0.9);
+    text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
+}
+
+.hero .hero-content h4 span{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: rgba(4, 38, 90, 0.9);
+    text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
+}
+
+.hero .hero-content h3{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: rgba(158, 194, 248, 0.9);
+    text-shadow: 1px 1px 6px rgb(1, 33, 68), 2px 2px 8px rgb(2, 34, 70);
+}
+
+.hero .button{
+    position:absolute;
+    margin-right: 110px;
+    padding: 10px 10px;
+    width: 350px;
+    font-size: 40px;
+    height: auto;
+    color: #F5F5F5;
+    left: 50%;
+    border: 2px solid rgb(22, 83, 175, 0.5);
+    border-radius: 50%;
+    background-color: rgb(22, 83, 175, 0.5);
+    box-shadow: 3px 3px 8px black, 3px 3px 4px black;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: translateX(-50%);
+}
+
+.hero .button:active{
+    transform: translateX(-50%) scale(0.9);
+    background-color: rgb(245, 245, 245,0.7);
+    color:  rgb(22, 83, 175);
+    border: 2px solid #F5F5F5;
+}
+
+/* visi misi*/
+
+section.visi_misi{
+    margin-top: 100px;
+    display: flex;
+}
+
+section.visi_misi .foto{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+    height: auto;
+    width: 1600px;
+}
+
+section.visi_misi .foto img{
+    width: 100%;
+    height: auto;
+}
+
+
+section.visi_misi .content{
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-right: 150px;
+    text-align: justify;
+}
+
+
+section.visi_misi .content h1{
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+section.visi_misi .content p{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Jadwal */
+
+section.jadwal{
+    padding-right: 60px;
+    padding-left: 70px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(1, 15, 77,0.1);
+}
+
+section.jadwal .jadwal_content .item .container img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+section.jadwal .jadwal_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    padding-left: 30px;
+    padding-top: 130px;
+}
+
+section.jadwal .jadwal_content .item{
+    display: flex;
+    width: 380px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid rgb(1, 85, 212);
+    border-radius: 10px;
+}
+
+section.jadwal .jadwal_judul{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: -40px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(1, 85, 212);
+    text-shadow: 1px 1px 2px white;
+    
+}
+
+section.jadwal .jadwal_content .item .container{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin-right: 15px;
+}
+section.jadwal .jadwal_content .item .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #333;
+    top: 0;
+    opacity: 0.6;
+}
+
+section.jadwal .jadwal_content .item:nth-child(1) .container::before{
+    content: "Ibadah Umum";
+}
+section.jadwal .jadwal_content .item:nth-child(2) .container::before{
+    content: "Komsel";
+}
+section.jadwal .jadwal_content .item:nth-child(3) .container::before{
+    content: "PPK";
+}
+section.jadwal .jadwal_content .item:nth-child(4) .container::before{
+    content: "PWK";
+}
+section.jadwal .jadwal_content .item:nth-child(5) .container::before{
+    content: "PRBK";
+}
+section.jadwal .jadwal_content .item:nth-child(6) .container::before{
+    content: "Sekolah Minggu";
+}
+
+section.jadwal .jadwal_content .item .container::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    z-index: 2;
+    text-align: center;
+
+}
+
+section.jadwal .jadwal_content .item .container_content h3{
+    font-size: 25px;
+    margin-top: 2px;
+}
+section.jadwal .jadwal_content .item:nth-child(1) .container_content h3{
+    font-size: 22px;
+    margin-top: 30px;
+}
+section.jadwal .jadwal_content .item:nth-child(2) .container_content h3{
+    font-size: 22px;
+    margin-top: 30px;
+}
+section.jadwal .jadwal_content .item:nth-child(5) .container_content h3{
+    font-size: 22px;
+    margin-top: -5px;
+}
+section.jadwal .jadwal_content .item .container_content{
+    text-align: center;
+    width: 180px;
+    position: relative;
+}
+
+section.jadwal .jadwal_content .item .container_content .garis{
+    position: absolute;
+    bottom: 45%;
+    width: 180px;
+    height: 2px;
+    background-color: #333;
+}
+
+section.jadwal .jadwal_content .item .container_content p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
