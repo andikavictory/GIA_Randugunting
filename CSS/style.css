@@ -238,7 +238,7 @@ section.jadwal{
     padding-top: 100px;
     padding-bottom: 200px;
     margin-top: 150px;
-    width: 91%;
+    width: 100%;
     height: auto;
     background-color: rgb(1, 15, 77,0.1);
 }
@@ -264,6 +264,15 @@ section.jadwal .jadwal_content .item{
     padding: 20px 20px 20px 20px;
     border: 1px solid rgb(1, 85, 212);
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+section.jadwal .jadwal_content .item:hover{
+    scale: 1.1;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    background-color: rgb(1, 85, 212,0.1);
+    color: white;
 }
 
 section.jadwal .jadwal_judul{
@@ -447,6 +456,7 @@ section.lokasi_pertanyaan{
 }
 section.lokasi_pertanyaan .maps{
     padding-top:110px ;
+    margin-left: 60px;
 }
 section.lokasi_pertanyaan .pertanyaan{
     width: 100%;
@@ -552,12 +562,6 @@ footer .container-about .info{
     margin-right: 100px;
     margin-top: -30px;
 }
-
-footer .copyright{
-    color: white;
-    text-align: center;
-    padding: 50px;
-}
 footer .container-about .info .logo{
     width: 400px;
     height: auto;   
@@ -599,3 +603,78 @@ footer .container-about .about ul li .icon{
     scale: 1.5;
 }
 
+footer .container-about .about{
+    width: 500vh;
+    margin-top: 70px;
+}
+footer .container-about .about ul li{
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+}
+footer .container-about .about ul li:hover{
+    color: #79b3f5;
+    cursor: pointer;
+}
+footer .container-about .about ul li:hover .icon{
+    stroke:#79b3f5;
+}
+footer .container-about .menu{
+    width: 100%;
+    margin-top: 20px;
+}
+footer .container-about .menu ul li{
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+}
+footer .container-about .menu ul li:hover{
+    color: #79b3f5;
+    cursor: pointer;
+}
+footer .copyright{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+/* Layar tablet 768px */
+@media only screen and (max-width: 768px) {
+    section.hero{
+        margin: -8px 0px 0px -8px;
+        width: 102.1%;
+    }
+    section.jadwal{
+        padding-left:22.5vh;
+        width: 76%;
+    }
+    section.lokasi_pertanyaan {
+        display: flex;
+        flex-wrap: wrap;
+        width: 570px;
+    }
+    section.lokasi_pertanyaan .maps iframe{
+        width:640px;
+        height:650px;
+        margin-left: -100px;
+    }
+    section.lokasi_pertanyaan .pertanyaan{
+        width: 630px;
+        height:850px;
+        margin-left: -100px;
+    }
+    section.lokasi_pertanyaan .pertanyaan span, h1{
+        margin-left: 18%;
+    }
+    section.lokasi_pertanyaan .pertanyaan .kotak_isian{
+        width: 100%;
+    }
+}
+
+/* layar HP Android 480px */
+@media only screen and (max-width: 480px) {
+}
