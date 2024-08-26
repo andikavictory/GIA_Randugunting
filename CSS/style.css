@@ -289,8 +289,9 @@ section.jadwal .jadwal_content .item:hover{
 section.jadwal .jadwal_judul{
     position: absolute;
     left: 0;
+    right: 0;
+    margin-left: 20px;
     text-align: center;
-    width: 100%;
     margin-bottom: 50px;
     font-size: 50px;
     font-weight: bold;
@@ -437,7 +438,9 @@ section.renungan .content p,i{
 }
 section.renungan .gambar{
     position: relative;
-    width: 80%;
+    width: 60%;
+    margin-left: 4%;
+    margin-right: 3%;
 }
 
 
@@ -570,9 +573,8 @@ footer .container-about .info{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-left: -50px;
-    margin-right: 100px;
-    margin-top: -30px;
+    margin-left: 15%;
+    margin-top: -110px;
 }
 footer .container-about .info .logo{
     width: 400px;
@@ -599,15 +601,24 @@ footer .container-about div h3{
     margin-bottom: -20px;
 }
 
-footer .container-about .about{
-    width: 100%;
-    margin-top: 20px;
-}
-footer .container-about .about ul li{
-    font-size: 30px;
-    padding: 10px;
+footer .container-about .menu{
+    margin-left: 100px;
     display: flex;
 }
+footer .container-about .menu{
+    margin-top: 50px;
+    
+}
+footer .container-about .menu ul li{
+font-size: 30px;
+padding-top: 30px;
+}
+footer .container-about .menu ul li:hover{
+    color: #0756b1;
+    cursor: pointer;
+    }
+
+
 footer .container-about .about ul li .icon{
     stroke: white;
     margin-right: 20px;
@@ -619,9 +630,14 @@ footer .container-about .about{
     width: 500vh;
     margin-top: 70px;
 }
+footer .container-about .about ul{
+    display: flex;
+    margin-top: 35%;
+    margin-left: -75%;
+}
 footer .container-about .about ul li{
     font-size: 30px;
-    padding: 10px;
+    padding: 10px 60px;
     display: flex;
 }
 footer .container-about .about ul li:hover{
@@ -630,19 +646,6 @@ footer .container-about .about ul li:hover{
 }
 footer .container-about .about ul li:hover .icon{
     stroke:#79b3f5;
-}
-footer .container-about .menu{
-    width: 100%;
-    margin-top: 20px;
-}
-footer .container-about .menu ul li{
-    font-size: 30px;
-    padding: 10px;
-    display: flex;
-}
-footer .container-about .menu ul li:hover{
-    color: #79b3f5;
-    cursor: pointer;
 }
 footer .copyright{
     color: white;
@@ -686,10 +689,8 @@ footer .copyright{
         width: 102.1%;
         padding-top: 350px;
     }
-    section.hero .hero-content{
-
-    }
     section.hero .hero-content h2{
+        width: 100%;
         font-size: 40px;
     }
     section.hero .hero-content h1{
@@ -726,22 +727,23 @@ footer .copyright{
     
     section.jadwal{
         padding-left:22.5vh;
-        width: 63.9%;
+        width: 76.2%;
         padding-bottom: 40%;
     }
     section.jadwal .jadwal_judul{
-        margin-left: 2%;
+        font-size: 50px;
+        margin-left: -0.5%;
     }
     section.jadwal .jadwal_content .item{
-        margin-left: -20%;
+        margin-left:1%;
         margin-bottom:-80px ;
     }
-    section.renungan{}
     section.renungan .container{
         display: flex;
         flex-wrap: wrap;
         width: 95%;
         padding-left: 0%;
+        margin-left: 5%;
     }
     section.renungan .container .gambar{
         width: 80%;
@@ -757,7 +759,7 @@ footer .copyright{
     section.lokasi_pertanyaan {
         display: flex;
         flex-wrap: wrap;
-        width: 540px;
+        width: 570px;
     }
     section.lokasi_pertanyaan .maps iframe{
         width:201%;
@@ -777,7 +779,7 @@ footer .copyright{
         width: 100%;
     }
     footer {
-        width: 101.2%;
+        width: 102.4%;
         height: auto;
         padding: 30px 0px 20px;
         background-color: rgb(51, 51, 51, 0.9);
@@ -786,12 +788,32 @@ footer .copyright{
     footer .container-about{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3%;
 
 }
     footer .container-about .info{
-        margin-left: 0%;
-
+        margin-left: -6%;
 }
+    
+    footer .container-about .info .text h1,h2{
+        margin-left: 0%;
+        width: 145%;
+    }
+    footer .container-about .about ul li{
+        margin-left: 27%;
+        width: 120%;
+    }
+    footer .container-about .menu ul li{
+        margin-left:-10%;
+        width: 30%;
+        margin-top: -20%;
+    }
+    footer .container-about .menu ul li:nth-child(1){
+        margin-top: 0%;
+    }
+    footer .copyright{
+        padding-top: 100px;
+    }
 }
 
 /* layar HP Android 480px */
