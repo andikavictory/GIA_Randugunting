@@ -22,20 +22,20 @@ li{
 nav{
     z-index: 1;
     display: flex;
+    justify-content: space-between;
     position: absolute;
-    padding-top: 5vh;
-    width: 100.1%;
-    height: 50px;
+    padding: 2vh 0px;
+    width: 99%;
+    height: auto;
     background-color: rgba(29, 31, 34, 0.3);
-    margin-left: -10px;
 }
-
 nav .logo{
-    margin-right: 23px;
+    display: flex;
+    flex-basis: 15%;
+    align-items: center;
+    padding-left: 3%;
 }
 nav .logo img{
-    margin-top: -45px;
-    margin-left: 40px;
     width: 130px;
     height: auto;
     opacity: 80%;
@@ -43,30 +43,30 @@ nav .logo img{
 
 nav .menu{
     display: flex;
-    width: 68%;
+    flex-basis: 70%;
     flex-wrap: wrap;
 }
 
 nav .menu ul{
-    position: absolute;
-    display: inline-block;
-    left: 25%;
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
 }
 nav .menu ul li{
-    display: inline-block;
-    position: relative;
     text-decoration: none;
     padding: 0px 50px 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: #F5F5F5;
+    position: relative;
 
 }
 nav .menu ul li::after{
-    content: "";
     position: absolute;
+    content: "";
     left: 50%;
-    bottom: 0%;
+    bottom: -39%;
     width: 0%;
     height: 2px;
     background-color: aliceblue;
@@ -84,15 +84,18 @@ nav .menu ul li:hover::after{
     transform: scaleX(1);
 
 }
-
 nav .login{
-    position:absolute;
-    margin-right: 70px;
-    margin-top: -30px;
+    display: flex;
+    flex-basis: 15%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3%;
+}
+nav .login .btn-login{
     padding: 10px 10px;
     width: 75px;
     font-size: 30px;
-    height: auto;
+    height: max-content;
     color: #F5F5F5;
     right: 0;
     border: 2px solid rgb(22, 83, 175, 0.3);
@@ -103,7 +106,7 @@ nav .login{
     transition: transform 0.2s ease;
 }
 
-nav .login:active{
+nav .login .btn-login:active{
     transform: scale(0.9);
     background-color: #f5f5f5;
     color:  rgb(22, 83, 175);
@@ -459,24 +462,33 @@ section.renungan .gambar img{
 
 /* Maps dan Pertanyaan */
 section.lokasi_pertanyaan{
-    width: 90.35%;
+    width: 86.65%;
     height: auto;
     padding: 100px;
     background-color: rgb(1, 15, 77,0.1);
     margin-top: -80px;
     display: flex;
     margin-left: -10px;
+    padding-left: 9%;
     
 }
 section.lokasi_pertanyaan .maps{
-    padding-top:110px ;
-    margin-left: 95px;
+    padding-top:110px;
+    flex-basis: 50%;
+}
+section.lokasi_pertanyaan .maps iframe{
+    width:100%;
+    height:100%;  
+     
 }
 section.lokasi_pertanyaan .pertanyaan{
-    width: 100%;
     height: auto;
    text-align: center;
    padding-top: 100px; 
+   flex-basis: 50%;
+   margin-left: -2%;
+   display: flex;
+   justify-content: center;
 }
 section.lokasi_pertanyaan .pertanyaan h1, span{
     font-size: 40px;
@@ -493,12 +505,11 @@ section.lokasi_pertanyaan .pertanyaan h1{
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian{
-    width: 80%;
-    margin: 0px 10px;
-    margin-left: 60px;
+    margin: 9px 20px 0px 80px;
     height: 730px;
     background-color: rgb(1, 15, 77,0.1);
-    position: relative; 
+    position: relative;
+    padding-top: 25px; 
     
 }
 
@@ -512,7 +523,7 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .nama,.email,textarea{
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian .nama {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian textarea {
@@ -523,8 +534,8 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim {
     width: fit-content;
     height: auto;
     text-align: left;
-    margin-left: 80px;
-    margin-top: 20px;
+    margin-left: 60px;
+    margin-top: 10px;
     font-size: 40px;
     font-weight: bold;
     border: 2px solid black;
@@ -546,12 +557,103 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
     box-shadow: 3px 3px 4px black;
 }
 /* footer */
+footer {
+    width: 100.4%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(210, 211, 223);
+}
+footer .container-info{
+    width: 100%;
+    flex-basis: 70%;
+    display: flex;
+    
+}
+footer .container-info .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+    flex-basis: 50%;
+    padding-left: 7%;
+}
+footer .container-info .info .logo{
+    display: flex;
+    width: 30%;
+    margin-right: 6%;
+}
+footer .container-info .info .logo img{
+    width: 100%;
+    height: auto;
+}
+footer .container-info .info .text{
+    width: 100%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
 
+footer .container-info .info .text h1,h2{
+    color:#333;
+}
+footer .container-info .info .text h1{
+    font-size: 367%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+footer .container-info .info .text h2{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+footer .container-info .menu{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2%;
+    margin-left: 0%;
+}
+footer .container-info .menu ul:nth-child(2){
+    padding-left: 40%;
+}
+footer .container-info .menu ul li{
+    padding: 10px;
+    font-size: 25px;
+}
+
+footer .container-info .info ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-left: -12%;
+}
+footer .container-info .info ul li{
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    
+}
+footer .container-info .info ul li svg{
+    padding: 0px 10px;
+}
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    padding:2% 0%;
+    font-size: 20px;
+    font-style: italic;
+}
 
 /* Layar tablet 768px */
 @media only screen and (max-width: 768px) {
     nav {
-        width: 100%;
+        width: 99%;
     }
     nav .logo{
         margin-top: 14px;
@@ -617,8 +719,7 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
     }
     
     section.jadwal{
-        padding-left:22.5vh;
-        width: 76.2%;
+        width: 74.5%;
         padding-bottom: 40%;
     }
     section.jadwal .jadwal_judul{
@@ -626,7 +727,7 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
         margin-left: -0.5%;
     }
     section.jadwal .jadwal_content .item{
-        margin-left:1%;
+        margin-left:-2%;
         margin-bottom:-80px ;
     }
     section.renungan .container{
@@ -649,28 +750,205 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
 
     section.lokasi_pertanyaan {
         display: flex;
-        flex-wrap: wrap;
-        width: 570px;
+        flex-direction: column;
+        width: 80.1%;
     }
     section.lokasi_pertanyaan .maps iframe{
-        width:201%;
+        width: 106%;
         height:650px;
-        margin-left: -40%;
-        margin-top: -20%;
+        margin-top: -10%;
     }
     section.lokasi_pertanyaan .pertanyaan{
-        width: 630px;
+        width: 125%;
         height:850px;
-        margin-left: -100px;
+        margin-left: -15%;
+        margin-top: -10%;
     }
-    section.lokasi_pertanyaan .pertanyaan span, h1{
-        margin-left: 18%;
+    footer{
+        width: 102%;
+        margin-left: -1%;
     }
-    section.lokasi_pertanyaan .pertanyaan .kotak_isian{
-        width: 100%;
+    footer .container-info{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    footer .container-info .info{
+        flex-basis: 70%;
+        padding-left:0% ;
+    }
+    footer .container-info .info .text ul{
+        justify-content: left;
+        margin-left: -1%;
+    }
+    footer .container-info .info .text ul li{
+        padding: 5px;
+    }
+    footer .container-info .info .logo{
+        width: 0;
+    }
+    footer .container-info .info .text h1{
+        font-size: 315%;
+    }
+    footer .container-info .menu{
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+    }
+    footer .container-info .menu ul:nth-child(2){
+        padding-left: 0%;
     }
 }
 
 /* layar HP Android 480px */
 @media only screen and (max-width: 480px) {
+    nav {
+        width: 73%;
+        margin-left: -1%;
+    }
+    nav .logo{
+        margin-top: 14px;
+        margin-left: -25px;
+    }
+    nav .logo img{
+        width: 100px;
+    }
+
+    nav .login{
+        margin: -20px 15px 0px 0px;
+        width: 40px;
+        font-size: 17px;
+    }
+
+    nav .menu ul li{
+        margin-left: -5px;
+        padding: 15px;
+        font-size: 18px;
+        margin-top: -10px;
+        padding-bottom: 24px;
+    }
+
+    section.hero{
+        margin: -8px 0px 0px -8px;
+        width: 77.4%;
+        padding-top: 350px;
+    }
+    section.hero .hero-content h2{
+        width: 100%;
+        font-size: 40px;
+    }
+    section.hero .hero-content h1{
+     font-size: 70px;   
+     margin-left: -20px;
+    }
+    section.hero .hero-content h4{
+        padding: 0px 20px;
+        font-size: 20px;
+       }
+    section.hero .hero-content h3{
+        font-size: 20px;
+       }
+       section.hero .button{
+        font-size: 18px;
+        width: 140px;
+       }
+    section.visi_misi{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.visi_misi .foto{
+        width: 60%;
+        margin-left: 20%;
+    }
+    section.visi_misi .content h1{
+        margin-left: 0%;
+    }
+    section.visi_misi .content p{
+        width: 115%;
+        margin-left: 1%;
+        font-size: 30px;
+    }
+    
+    section.jadwal{
+        width: 74.5%;
+        padding-bottom: 40%;
+    }
+    section.jadwal .jadwal_judul{
+        font-size: 50px;
+        margin-left: -0.5%;
+    }
+    section.jadwal .jadwal_content .item{
+        margin-left:-2%;
+        margin-bottom:-80px ;
+    }
+    section.renungan .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        padding-left: 0%;
+        margin-left: 5%;
+    }
+    section.renungan .container .gambar{
+        width: 80%;
+        height: 400px;
+        margin-left: 15%;
+        margin-top: -5%;
+        margin-bottom: 5%;
+    }
+    section.renungan .container h1{
+        margin-left: 0%;
+    }
+
+    section.lokasi_pertanyaan {
+        display: flex;
+        flex-direction: column;
+        width: 80.1%;
+    }
+    section.lokasi_pertanyaan .maps iframe{
+        width: 106%;
+        height:650px;
+        margin-top: -10%;
+    }
+    section.lokasi_pertanyaan .pertanyaan{
+        width: 125%;
+        height:850px;
+        margin-left: -15%;
+        margin-top: -10%;
+    }
+    footer{
+        width: 102%;
+        margin-left: -1%;
+    }
+    footer .container-info{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    footer .container-info .info{
+        flex-basis: 70%;
+        padding-left:0% ;
+    }
+    footer .container-info .info .text ul{
+        justify-content: left;
+        margin-left: -1%;
+    }
+    footer .container-info .info .text ul li{
+        padding: 5px;
+    }
+    footer .container-info .info .logo{
+        width: 0;
+    }
+    footer .container-info .info .text h1{
+        font-size: 315%;
+    }
+    footer .container-info .menu{
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+    }
+    footer .container-info .menu ul:nth-child(2){
+        padding-left: 0%;
+    }
 }
