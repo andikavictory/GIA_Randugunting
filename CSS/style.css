@@ -419,17 +419,21 @@ section.galeri .container-galeri{
     margin-left: -1%;
     padding-left: 1%;
 }
+
+section.galeri .container-galeri .img-container{
+    overflow: hidden;
+}
 section.galeri .container-galeri .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
-section.galeri .container-galeri .img-container.zoom{
-    transform:scale(2);
+section.galeri .container-galeri .img-container.zoom img{
+    transform:scale(1.1);
 }
 section.galeri .container-galeri div:nth-child(1){
     grid-column:2/4;
