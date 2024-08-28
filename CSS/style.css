@@ -1,4 +1,9 @@
 /* Navbar Menu */
+:root {
+    --hover: rgb(76, 189, 255);
+    --secondary-color: #2ecc71;
+    --background-color: #f4f4f4;
+  }
 body {
     height: 300vh;
 }
@@ -21,11 +26,12 @@ li{
 
 nav{
     z-index: 1;
+    margin-left: -1%;
     display: flex;
     justify-content: space-between;
     position: absolute;
     padding: 2vh 0px;
-    width: 99%;
+    width: 100.6%;
     height: auto;
     background-color: rgba(29, 31, 34, 0.3);
 }
@@ -84,34 +90,24 @@ nav .menu ul li:hover::after{
     transform: scaleX(1);
 
 }
-nav .login{
+nav .search{
     display: flex;
     flex-basis: 15%;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    padding-right: 3%;
+    transform: scaleX(-1);
 }
-nav .login .btn-login{
-    padding: 10px 10px;
-    width: 75px;
-    font-size: 30px;
-    height: max-content;
-    color: #F5F5F5;
-    right: 0;
-    border: 2px solid rgb(22, 83, 175, 0.3);
-    border-radius: 20%;
-    background-color: rgb(22, 83, 175, 0.3);
-    box-shadow: 4px 4px 7px black;
+nav .search svg{
+    stroke: #F5F5F5;
+    width: 30px;
+    height: auto;
+
+}
+nav .search svg:hover{
+    stroke: var(--hover);
     cursor: pointer;
-    transition: transform 0.2s ease;
 }
 
-nav .login .btn-login:active{
-    transform: scale(0.9);
-    background-color: #f5f5f5;
-    color:  rgb(22, 83, 175);
-    border: 2px solid #F5F5F5;
-}
 /* Hero Section */
 
 section.hero {
@@ -387,77 +383,46 @@ section.jadwal .jadwal_content .item .container_content p{
     right: 0;
 }
 
-section.renungan {
-    width: 84%;
-    margin:-100px 8% 0px 8%;
+section.galeri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+section.galeri .judul{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    color: #cbe1fa;
+    margin-top: -3%;
+    padding: 30px 0px 30px;
+    width: 80%;
     height: auto;
     background-color: rgb(0, 1, 24);  
     border: 2px solid white;
     box-shadow: 1px 1px 5px rgb(3, 3, 3);
 }
-
-section.renungan .judul{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-    color: #cbe1fa;
-    padding: 50px 0px 80px;
+section.galeri .container-galeri{
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-rows: masonry;
+    gap:20px;
+    justify-content: center;
+    width: 80%;
+    margin-left: -1%;
+    padding-left: 1%;
 }
-
-section.renungan .container{
-    display: flex;
-}
-
-section.renungan .content{
-    padding-right: 50px;
-    padding-left: 20px;
-    padding-bottom: 80px;
-    text-align: justify;
-    width: 120%;
-}
-
-section.renungan .content h1{
-    color: #97a9be;
-    font-size: 40px;
-}
-
-section.renungan .content h5{
-    color: #97a9be;
-    font-size: 15px;
-    font-style: italic;
-    margin-top: -20px 0px;
-}
-
-section.renungan .content h3{
-    color: #97a9be;
-    font-size: 15px;
-    margin-bottom: 50px;
-
-}
-section.renungan .content p,i{
-    color: #97a9be;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-section.renungan .gambar{
-    position: relative;
-    width: 60%;
-    margin-left: 4%;
-    margin-right: 3%;
-}
-
-
-section.renungan .gambar img{
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 2%;
-    
+section.galeri .container-galeri img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 /* Maps dan Pertanyaan */
@@ -466,10 +431,10 @@ section.lokasi_pertanyaan{
     height: auto;
     padding: 100px;
     background-color: rgb(1, 15, 77,0.1);
-    margin-top: -80px;
     display: flex;
     margin-left: -10px;
     padding-left: 9%;
+    margin-top: 3%;
     
 }
 section.lokasi_pertanyaan .maps{
@@ -806,10 +771,21 @@ footer .copyright {
     nav {
         width: 73%;
         margin-left: -1%;
+        display: flex;
+        justify-content: right;
+    }
+    nav .hamburger-menu{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: left;
+    }
+    nav .search{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: left;padding-left: 7%;
     }
     nav .logo{
-        margin-top: 14px;
-        margin-left: -25px;
+        display: none;
     }
     nav .logo img{
         width: 100px;
@@ -820,13 +796,24 @@ footer .copyright {
         width: 40px;
         font-size: 17px;
     }
-
+    nav .menu{
+        position: absolute;
+        right: -9px;
+        top: 120px;
+        width: 10rem;
+        background-color: rgba(203, 224, 238);
+    }
+    nav .menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
     nav .menu ul li{
-        margin-left: -5px;
         padding: 15px;
         font-size: 18px;
         margin-top: -10px;
         padding-bottom: 24px;
+        color: #333;
     }
 
     section.hero{
