@@ -109,14 +109,24 @@ nav .search svg:hover{
 }
 
 /* Hero Section */
-
+section.hero .background{
+    position: absolute;
+    background-image: url(..//img/background2.jpg);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-top:-200px;
+    background-attachment: fixed;
+}
 section.hero {
     position: relative;
     padding-top:200px;
     width: 100.95%;
     height: 740px;
     text-align: center;
-    background-image: url(..//img/background2.jpg);
+    background-color:rgb(0, 0, 0,0);
+    background-attachment: fixed;
     background-size: cover;
     margin-top: -10px;
     margin-left: -10px;
@@ -242,6 +252,7 @@ section.visi_misi .content p{
 /* Jadwal */
 
 section.jadwal{
+    position: relative;
     padding-right: 60px;
     padding-left: 150px;
     padding-top: 100px;
@@ -250,8 +261,20 @@ section.jadwal{
     width: 89.8%;
     margin-left: -10px;
     height: auto;
-    background-color: rgb(1, 15, 77,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
+section.jadwal .background-jadwal{
+    position: absolute;
+    margin-top: -6rem;
+    margin-left: -9.5rem;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background-image: url(../img/background-jadwal.jpg);
+    background-attachment: fixed;
+}
+
 
 section.jadwal .jadwal_content .item .container img{
     width: 100%;
@@ -273,16 +296,16 @@ section.jadwal .jadwal_content .item{
     height: auto;
     padding: 20px 20px 20px 20px;
     border: 1px solid rgb(1, 85, 212);
-    border-radius: 10px;
+    border-radius: 40px 5px 40px 5px;
     transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 section.jadwal .jadwal_content .item:hover{
     scale: 1.1;
     cursor: pointer;
     box-shadow: 1px 1px 2px black;
-    background-color: rgb(1, 85, 212,0.1);
-    color: white;
+    background-color: rgba(223, 232, 243, 0.8);
 }
 
 section.jadwal .jadwal_judul{
@@ -294,7 +317,7 @@ section.jadwal .jadwal_judul{
     margin-bottom: 50px;
     font-size: 50px;
     font-weight: bold;
-    color: rgb(1, 85, 212);
+    color: rgb(255, 255, 255,0.1);
     text-shadow: 1px 1px 2px white;
     
 }
@@ -383,6 +406,7 @@ section.jadwal .jadwal_content .item .container_content p{
     right: 0;
 }
 
+/* galeri */
 section.galeri {
     display: flex;
     justify-content: center;
@@ -429,8 +453,9 @@ section.galeri .container-galeri .img-container img{
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, transform-origin 0.1s ease-in-out;
 }
+
 
 section.galeri .container-galeri .img-container.zoom img{
     transform:scale(1.1);
@@ -559,11 +584,12 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
 }
 /* footer */
 footer {
-    width: 100.4%;
+    width: 101.44%;
     height: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(210, 211, 223);
+    margin-left: -1%;
 }
 footer .container-info{
     width: 100%;

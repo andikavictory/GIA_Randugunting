@@ -25,5 +25,6 @@ document.querySelectorAll('.img-container').forEach(container => {
     container.addEventListener('mouseleave', () => {
         img.style.transformOrigin = 'center center';
         container.classList.remove('zoom');
+        
     });
 });
