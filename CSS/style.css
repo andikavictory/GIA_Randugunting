@@ -4,34 +4,30 @@
     --secondary-color: #2ecc71;
     --background-color: #f4f4f4;
   }
-body {
-    height: 300vh;
-}
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
+* {
+    box-sizing: border-box;
+}
+body, nav {
+    margin: 0;
+    padding: 0;
+}
 li{
     margin: 0;
     padding: 0;
 }
-*{
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    color: #333;
-    
-}
 
 nav{
     z-index: 1;
-    margin-left: -1%;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    padding: 2vh 0px;
-    width: 100.6%;
+    padding: 1vh 0vw;
+    width: 100vw;
     height: auto;
     background-color: rgba(29, 31, 34, 0.3);
 }
@@ -42,7 +38,7 @@ nav .logo{
     padding-left: 3%;
 }
 nav .logo img{
-    width: 130px;
+    width: 9rem;
     height: auto;
     opacity: 80%;
 }
@@ -62,17 +58,16 @@ nav .menu ul{
 }
 nav .menu ul li{
     text-decoration: none;
-    padding: 0px 50px 20px;
-    font-size: 25px;
+    padding: 0px 3rem 1.5rem;
+    font-size: 1.6rem;
     color: #F5F5F5;
     position: relative;
-
 }
 nav .menu ul li::after{
     position: absolute;
     content: "";
     left: 50%;
-    bottom: -39%;
+    bottom: -17%;
     width: 0%;
     height: 2px;
     background-color: aliceblue;
@@ -99,7 +94,7 @@ nav .search{
 }
 nav .search svg{
     stroke: #F5F5F5;
-    width: 30px;
+    width: 13%;
     height: auto;
 
 }
@@ -109,68 +104,58 @@ nav .search svg:hover{
 }
 
 /* Hero Section */
-section.hero .background{
-    position: absolute;
-    background-image: url(..//img/background2.jpg);
-    width: 100%;
-    height: 60rem;
-    object-fit: cover;
-    z-index: -1;
-    margin-top:-12.5rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
 section.hero {
+    background-image: url(..//img/background2.jpg);
     position: relative;
-    padding-top:200px;
-    width: 100.95%;
-    height: 740px;
+    padding-top:6rem;
+    width: 100vw;
+    min-height: auto;
     text-align: center;
     background-color:rgb(0, 0, 0,0);
     background-attachment: fixed;
     background-size: cover;
-    margin-top: -10px;
-    margin-left: -10px;
 }
 
 section.hero .efek-transparancy{
     position:absolute;
-    background:linear-gradient(to bottom, rgb(255, 255, 255,0), rgb(255, 255, 255,1)80%);
+    background:linear-gradient(to bottom, rgb(255, 255, 255,0), rgb(255, 255, 255,1)100%);
     width: 100%;
     height: 35%;
-    margin-top: 460px; 
+    bottom: 0%; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+.hero .hero-content {
+    padding-top: 4%;
+    padding-bottom:20% ;
+}
 .hero .hero-content h2{
-    font-size: 80px;
+    font-size: 4rem;
     font-family: 'Playfair Display', serif;
     color: rgba(4, 40, 95, 0.9);
     text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
-    margin-bottom: 30px;
 }
 
 .hero .hero-content h1{
-    font-size: 120px;
-    margin-top: -40px;
-    margin-bottom: 60px;
+    font-size: 8rem;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
     color: rgba(4, 38, 90, 0.9);
     text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
 }
 
 .hero .hero-content h4{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-style: italic;
-    margin-top: -40px;
     font-family: 'Playfair Display', serif;
     color: rgba(4, 38, 90, 0.9);
     text-shadow: 1px 1px 6px rgb(158, 202, 252), 2px 2px 8px rgb(158, 202, 252);
 }
 
 .hero .hero-content h4 span{
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     color: rgba(4, 38, 90, 0.9);
@@ -178,7 +163,7 @@ section.hero .efek-transparancy{
 }
 
 .hero .hero-content h3{
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     color: rgba(158, 194, 248, 0.9);
@@ -187,12 +172,12 @@ section.hero .efek-transparancy{
 
 .hero .button{
     position:absolute;
-    margin-right: 110px;
-    padding: 10px 10px;
-    width: 350px;
-    font-size: 40px;
+    padding: 0.8rem 0.8rem;
+    width: 21rem;
+    font-size: 2.5rem;
     height: auto;
     color: #F5F5F5;
+    bottom:20%;
     left: 50%;
     border: 2px solid rgb(22, 83, 175, 0.5);
     border-radius: 50%;
@@ -213,16 +198,16 @@ section.hero .efek-transparancy{
 /* visi misi*/
 
 section.visi_misi{
-    margin-top: 100px;
     display: flex;
 }
 
 section.visi_misi .foto{
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-top: 100px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 8.3rem;
+    width: 30%;
     height: auto;
-    width: 1600px;
+    width: 100%;
 }
 
 section.visi_misi .foto img{
@@ -232,21 +217,20 @@ section.visi_misi .foto img{
 
 
 section.visi_misi .content{
-    padding-left: 50px;
-    padding-top: 80px;
-    padding-right: 150px;
+    padding-top: 5rem;
+    padding-right:9rem;
     text-align: justify;
 }
 
 
 section.visi_misi .content h1{
-    font-size: 50px;
+    font-size: 3.3rem;
     font-family: 'Merriweather', serif;
     color: #333;
 }
 
 section.visi_misi .content p{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: 'Merriweather', serif;
 }
 
@@ -254,20 +238,14 @@ section.visi_misi .content p{
 
 section.jadwal{
     position: relative;
-    padding-right: 60px;
-    padding-left: 150px;
-    padding-top: 100px;
-    padding-bottom: 200px;
-    margin-top: 150px;
-    width: 89.8%;
-    margin-left: -10px;
+    width: 100vw;
     height: auto;
     background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 10rem;
+    margin-top: 5rem;
 }
 section.jadwal .background-jadwal{
     position: absolute;
-    margin-top: -6rem;
-    margin-left: -9.5rem;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -277,26 +255,39 @@ section.jadwal .background-jadwal{
     background-position: center;
 }
 
-
 section.jadwal .jadwal_content .item .container img{
     width: 100%;
     height: 100%;
     position: relative;
 }
+section.jadwal .jadwal_judul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:5%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255,0.1);
+    text-shadow: 1px 1px 2px white;
+    
+}
 
 section.jadwal .jadwal_content{
     display: flex;
     flex-wrap: wrap;
-    gap: 150px;
-    padding-left: 30px;
-    padding-top: 130px;
+    gap: 9.8rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13rem;
 }
 
 section.jadwal .jadwal_content .item{
     display: flex;
-    width: 380px;
+    width: 23.5rem;
     height: auto;
-    padding: 20px 20px 20px 20px;
+    margin-top: -3rem;
+    padding: 1.4rem 1.4rem 1.4rem 1.4rem;
     border: 1px solid rgb(1, 85, 212);
     border-radius: 40px 5px 40px 5px;
     transition: all 0.3s;
@@ -310,25 +301,11 @@ section.jadwal .jadwal_content .item:hover{
     background-color: rgba(223, 232, 243, 0.8);
 }
 
-section.jadwal .jadwal_judul{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: 20px;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(255, 255, 255,0.1);
-    text-shadow: 1px 1px 2px white;
-    
-}
-
 section.jadwal .jadwal_content .item .container{
     position: relative;
-    width: 200px;
-    height: 150px;
-    margin-right: 15px;
+    width: 13rem;
+    height: 9.8rem;
+    margin-right: 1rem;
 }
 section.jadwal .jadwal_content .item .overlay{
     width: 100%;
@@ -365,47 +342,49 @@ section.jadwal .jadwal_content .item .container::before{
     transform: translate(-50%,-50%);
     color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
     z-index: 2;
     text-align: center;
 
 }
 
 section.jadwal .jadwal_content .item .container_content h3{
-    font-size: 25px;
-    margin-top: 2px;
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
 }
 section.jadwal .jadwal_content .item:nth-child(1) .container_content h3{
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
 }
 section.jadwal .jadwal_content .item:nth-child(2) .container_content h3{
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 1.6rem;
+    margin-top: 15%;
 }
 section.jadwal .jadwal_content .item:nth-child(5) .container_content h3{
-    font-size: 22px;
-    margin-top: -5px;
+    font-size: 1.6rem;
+    margin-top: -2%;
 }
 section.jadwal .jadwal_content .item .container_content{
     text-align: center;
-    width: 180px;
+    width: 12.2rem;
     position: relative;
 }
 
 section.jadwal .jadwal_content .item .container_content .garis{
     position: absolute;
     bottom: 45%;
-    width: 180px;
-    height: 2px;
+    width: 10rem;
+    height: 0.1rem;
     background-color: #333;
 }
 
 section.jadwal .jadwal_content .item .container_content p{
     position: absolute;
-    bottom: 0;
+    bottom: -0.3rem;
     left: 0;
     right: 0;
+    font-size: 1rem;
+    width: 103%;
 }
 
 /* galeri */
@@ -413,7 +392,7 @@ section.galeri {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     
 }
@@ -421,13 +400,13 @@ section.galeri {
 section.galeri .judul{
     display: flex;
     justify-content: center;
-    font-size: 70px;
+    font-size: 4.5rem;
     font-weight: bold;
     font-style: italic;
     color: #cbe1fa;
-    margin-top: -3%;
-    padding: 30px 0px 30px;
-    width: 80%;
+    margin-top: -5.6%;
+    padding: 1.5rem 0rem 1.5rem;
+    width: 80vw;
     height: auto;
     background-color: rgb(0, 1, 24);  
     border: 2px solid white;
@@ -438,12 +417,10 @@ section.galeri .container-galeri{
     margin-top: 2%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
-    gap:20px;
-    padding: 20px;
+    gap:1.4rem;
+    padding: 1.3rem;
     justify-content: center;
     width: 80%;
-    margin-left: -1%;
-    padding-left: 1%;
 }
 
 section.galeri .container-galeri .img-container{
@@ -490,18 +467,16 @@ section.galeri .container-galeri div:nth-child(6){
 
 /* Maps dan Pertanyaan */
 section.lokasi_pertanyaan{
-    width: 86.65%;
+    width: 100vw;
     height: auto;
-    padding: 100px;
     background-color: rgb(1, 15, 77,0.1);
     display: flex;
-    margin-left: -10px;
-    padding-left: 9%;
+    justify-content: center;
     margin-top: 3%;
+    padding: 5rem 6rem 8rem;
     
 }
 section.lokasi_pertanyaan .maps{
-    padding-top:110px;
     flex-basis: 50%;
 }
 section.lokasi_pertanyaan .maps iframe{
@@ -511,15 +486,15 @@ section.lokasi_pertanyaan .maps iframe{
 }
 section.lokasi_pertanyaan .pertanyaan{
     height: auto;
+    margin-top: -0.5rem;
    text-align: center;
-   padding-top: 100px; 
    flex-basis: 50%;
    margin-left: -2%;
    display: flex;
    justify-content: center;
 }
 section.lokasi_pertanyaan .pertanyaan h1, span{
-    font-size: 40px;
+    font-size: 2.4rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -528,24 +503,24 @@ section.lokasi_pertanyaan .pertanyaan span{
     text-shadow: 1px 1px 10px black;
 }
 section.lokasi_pertanyaan .pertanyaan h1{
-    margin-top: 0px;
+    margin-top: 0rem;
     color: #333;
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian{
-    margin: 9px 20px 0px 80px;
-    height: 730px;
+    margin: 0.6rem 1.5rem 0rem 4rem;
+    height: 46rem;
     background-color: rgb(1, 15, 77,0.1);
     position: relative;
-    padding-top: 25px; 
+    padding-top: 2rem; 
     
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian .nama,.email,textarea{
     width: 80%;
-    margin: 15px;
-    padding: 10px;
-    font-size: 20px;
+    margin: 2%;
+    padding: 2%;
+    font-size: 1.2rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -555,19 +530,19 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .nama {
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian textarea {
-    height: 300px;
+    height: 45%;
 }
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim {
     width: fit-content;
     height: auto;
     text-align: left;
-    margin-left: 60px;
-    margin-top: 10px;
-    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 1.2%;
+    font-size: 2.4rem;
     font-weight: bold;
     border: 2px solid black;
-    padding: 10px;
+    padding: 2%;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.2s;
@@ -586,17 +561,17 @@ section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim:active{
 }
 /* footer */
 footer {
-    width: 101.44%;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(210, 211, 223);
-    margin-left: -1%;
 }
 footer .container-info{
     width: 100%;
     flex-basis: 70%;
     display: flex;
+    justify-content: center;
     
 }
 footer .container-info .info{
@@ -604,25 +579,24 @@ footer .container-info .info{
     justify-content: center;
     align-items: center;
     padding-top: 0.5%;
-    flex-basis: 50%;
-    padding-left: 7%;
+    flex-basis: 60%;
+    
 }
 footer .container-info .info .logo{
     display: flex;
-    width: 30%;
-    margin-right: 6%;
+    width: 22%;
+    margin-top: -5%;
+    margin-right: 4%;
+    margin-left: 2%;
 }
 footer .container-info .info .logo img{
     width: 100%;
     height: auto;
 }
 footer .container-info .info .text{
-    width: 100%;
-    margin-right: 6%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 footer .container-info .info .text h1,h2{
@@ -639,7 +613,7 @@ footer .container-info .info .text h2{
 }
 
 footer .container-info .menu{
-    flex-basis: 30%;
+    flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -647,11 +621,11 @@ footer .container-info .menu{
     margin-left: 0%;
 }
 footer .container-info .menu ul:nth-child(2){
-    padding-left: 40%;
+    padding-left: 25%;
 }
 footer .container-info .menu ul li{
-    padding: 10px;
-    font-size: 25px;
+    padding: 20%;
+    font-size: 1.6rem;
 }
 
 footer .container-info .menu ul li:hover{
@@ -664,14 +638,18 @@ footer .container-info .info ul{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-left: -12%;
+    margin-left: -3%;
 }
 footer .container-info .info ul li{
-    padding: 0px 15px;
+    padding: 0% 0%;
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.4rem;
+    margin: 0% 0.4%;
     
+}
+footer .container-info .info ul li:nth-child(2){
+    margin-right: 6%;
 }
 footer .container-info .info ul li:hover,li:hover svg{
     color: #ffffff;
@@ -679,7 +657,8 @@ footer .container-info .info ul li:hover,li:hover svg{
     stroke: #ffffff;
 }
 footer .container-info .info ul li svg{
-    padding: 0px 10px;
+    padding: 1%;
+    margin: 0% 2%;
 }
 footer .copyright {
     display: flex;
@@ -688,384 +667,48 @@ footer .copyright {
     font-size: 20px;
     font-style: italic;
 }
-
-/* Layar tablet 768px */
-@media only screen and (max-width: 768px) {
-    nav {
-        width: 97.5%;
-        padding-left: 1rem;
+@media only screen and (max-width: 1268px) {
+    nav .menu ul li {
+        padding: 0px 2rem 1.5rem;
     }
-    nav .logo{
-        margin-top: 14px;
-        margin-left: -25px;
+}
+@media only screen and (max-width: 1268px) {
+    nav .menu ul li {
+        padding: 0px 1.5rem 1.5rem;
     }
-    nav .logo img{
-        width: 100px;
+}
+@media only screen and (max-width: 1150px) {
+    .hero .hero-content h1 {
+        font-size: 7rem;
     }
-
-    nav .login{
-        margin: -20px 15px 0px 0px;
-        width: 40px;
-        font-size: 17px;
+    .hero .button {
+        bottom:15%;
     }
-    nav .menu ul li::after{
-        bottom: 0.5rem;
-    }
-    nav .menu ul li{
-        margin-left: -5px;
-        padding: 15px;
-        font-size: 18px;
-        margin-top: -10px;
-        padding-bottom: 24px;
-    }
-
-    section.hero{
-        margin: -8px 0px 0px -8px;
-        width: 102.1%;
-        padding-top: 350px;
-    }
-    section.hero .background{
-        height: 74.5rem;
-        margin-top: -22rem;
-        width: 100%;
-    }
-    section.hero .hero-content h2{
-        width: 100%;
-        font-size: 40px;
-    }
-    section.hero .hero-content h1{
-     font-size: 70px;   
-     margin-left: -20px;
-    }
-    section.hero .hero-content h4{
-        padding: 0px 20px;
-        font-size: 20px;
-       }
-    section.hero .hero-content h3{
-        font-size: 20px;
-       }
-       section.hero .button{
-        font-size: 18px;
-        width: 140px;
-       }
     section.visi_misi{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    section.visi_misi .foto{
-        width: 60%;
-        margin-left: 20%;
-    }
-    section.visi_misi .content h1{
-        margin-left: 0%;
-    }
-    section.visi_misi .content p{
-        width: 115%;
-        margin-left: 1%;
-        font-size: 30px;
-    }
-    
-    section.jadwal{
-        width: 74.5%;
-        padding-bottom: 40%;
-    }
-    section.jadwal .background-jadwal{
-        width: 100%;
-        object-fit: cover;
-        background-position: 67% 100%;
-    }
-    section.jadwal .jadwal_judul{
-        font-size: 50px;
-        margin-left: -0.5%;
-    }
-    section.jadwal .jadwal_content .item{
-        margin-left:-2%;
-        margin-bottom:-80px ;
-    }
-    section.galeri .judul{
-        margin-top: -4rem;
-    }
-
-    section.lokasi_pertanyaan {
-        display: flex;
         flex-direction: column;
-        width: 80.1%;
+        padding: 0% 10%;
+        align-items: center;
     }
-    section.lokasi_pertanyaan .maps iframe{
-        width: 106%;
-        height:650px;
-        margin-top: -10%;
+    section.visi_misi .foto {
+        width: 30rem;
     }
-    section.lokasi_pertanyaan .pertanyaan{
-        width: 125%;
-        height:850px;
-        margin-left: -15%;
-        margin-top: -10%;
-    }
-    footer{
-        width: 102%;
-        margin-left: -1%;
-    }
-    footer .container-info{
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    footer .container-info .info{
-        flex-basis: 70%;
-        padding-left:0% ;
-    }
-    footer .container-info .info .text ul{
-        justify-content: left;
-        margin-left: -1%;
-    }
-    footer .container-info .info .text ul li{
-        padding: 5px;
-    }
-    footer .container-info .info .logo{
-        width: 0;
-    }
-    footer .container-info .info .text h1{
-        font-size: 315%;
-    }
-    footer .container-info .menu{
-        flex-basis: 20%;
-        display: flex;
-        flex-direction: column;
-        margin-right: 10%;
-    }
-    footer .container-info .menu ul:nth-child(2){
-        padding-left: 0%;
+    section.visi_misi .content {
+        margin-left: 7%;
+        padding-right: 3%;
     }
 }
 
-/* layar HP Android 480px */
-@media only screen and (max-width: 480px) {
-    nav {
-        width: 96.1%;
-        margin-left: -1%;
-        display: flex;
-        justify-content: right;
-        
+@media only screen and (max-width: 995px) {
+    .hero .hero-content h1 {
+        font-size: 6rem;
     }
-    nav .hamburger-menu{
-        flex-basis: 50%;
-        display: flex;
-        justify-content: left;
+    .hero .button {
+        bottom:13%;
     }
-    nav .search{
-        flex-basis: 50%;
-        display: flex;
-        justify-content: left;padding-left: 7%;
+    nav .menu ul li {
+        padding: 0px 1rem 1.5rem;
     }
-    nav .logo{
-        display: none;
+    .hero .hero-content h3 {
+        padding: 0% 5%;
     }
-    nav .logo img{
-        width: 100px;
     }
-
-    nav .login{
-        margin: -20px 15px 0px 0px;
-        width: 40px;
-        font-size: 17px;
-    }
-    nav .menu{
-        position: absolute;
-        left: -3px;
-        top: -1000px;
-        width: 100%;
-        height: 50rem;
-        z-index: 1;
-        background-color: rgba(203, 224, 238);
-    }
-    nav .menu ul{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    nav .menu ul li{
-        padding: 15px;
-        font-size: 18px;
-        margin-top: -10px;
-        padding-bottom: 24px;
-        color: #333;
-    }
-
-    section.hero{
-        margin: -8px 0px 0px -8px;
-        width: 103.5%;
-        padding-top: 200px;
-    }
-
-    section.hero .background{
-        background-position: 0% 20%;
-        height: 70rem;
-    }
-    section.hero .hero-content h2{
-        width: 100%;
-        font-size: 30px;
-    }
-    section.hero .hero-content h1{
-     font-size: 52px;   
-     margin-left: -20px;
-     margin-bottom: 80px;
-    }
-    section.hero .hero-content h4{
-        padding: 0px 20px;
-        font-size: 20px;
-        margin-bottom: 40px;
-       }
-    section.hero .hero-content h3{
-        font-size: 20px;
-        padding: 0px 80px;
-        margin-bottom: 80px;
-       }
-       section.hero .button{
-        font-size: 18px;
-        width: 140px;
-       }
-    section.visi_misi{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 0px;
-    }
-    section.visi_misi .foto{
-        width: 60%;
-        margin-left: 20%;
-    }
-    section.visi_misi .content{
-        padding-top: 0;
-    }
-    section.visi_misi .content h1{
-        margin-left: 0%;
-        font-size: 40px;
-    }
-    section.visi_misi .content p{
-        width: 140%;
-        margin-left: 1%;
-        font-size: 20px;
-    }
-    
-    section.jadwal{
-        width:95.2%;
-        padding-bottom: 40%;
-        padding: 0px;
-        padding-left: 2.5rem;
-        height: 82rem;
-    }
-    section.jadwal .background-jadwal{
-        height:82rem;
-        width: 37rem;
-        margin-top: 0rem;
-    }
-    section.jadwal .jadwal_judul{
-        font-size: 50px;
-        margin-top: 5%;
-    }
-    section.jadwal .jadwal_content{
-        padding-top: 10rem;
-        margin-bottom: 15rem;
-    }
-    section.jadwal .jadwal_content .item{
-        margin-left:-2%;
-        margin-bottom:-80px ;
-        width: 20rem;
-        height: 6rem;
-        margin-top: -30px;
-    }
-    section.jadwal .jadwal_content .item .container{
-        width: 13rem;
-        height: auto;
-    }
-    section.jadwal .jadwal_content .item:nth-child(1) .container_content h3 {
-        font-size: 18px;
-        margin-top: 5px;
-    }
-    section.jadwal .jadwal_content .item:nth-child(2) .container_content h3 {
-        font-size: 18px;
-        margin-top: 5px;
-    }
-    section.jadwal .jadwal_content .item:nth-child(5) .container_content h3 {
-        font-size: 16px;
-        margin-top: -5px;
-    }
-    section.jadwal .jadwal_content .item .container_content .garis {
-        width: 130px;
-        margin-left: -1%;
-        bottom: 45%;
-    }
-    section.jadwal .jadwal_content .item:nth-child(1) .container_content .garis {
-        width: 130px;
-        margin-left: -1%;
-        bottom: 55%;
-    }
-    section.jadwal .jadwal_content .item:nth-child(2) .container_content .garis {
-        width: 130px;
-        margin-left: -1%;
-        bottom: 55%;
-    }
-    section.jadwal .jadwal_content .item:nth-child(6) .container_content .garis {
-        width: 130px;
-        margin-left: -1%;
-        bottom: 55%;
-    }
-    section.jadwal .jadwal_content .item .container_content p {
-        top: 47px;
-        font-size: 12px;
-    }
-    section.jadwal .jadwal_content .item .container_content h3 {
-        font-size: 18px;
-    }
-    section.lokasi_pertanyaan {
-        display: flex;
-        flex-direction: column;
-        width: 80.1%;
-    }
-    section.lokasi_pertanyaan .maps iframe{
-        width: 106%;
-        height:650px;
-        margin-top: -10%;
-    }
-    section.lokasi_pertanyaan .pertanyaan{
-        width: 125%;
-        height:850px;
-        margin-left: -15%;
-        margin-top: -10%;
-    }
-    footer{
-        width: 102%;
-        margin-left: -1%;
-    }
-    footer .container-info{
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    footer .container-info .info{
-        flex-basis: 70%;
-        padding-left:0% ;
-    }
-    footer .container-info .info .text ul{
-        justify-content: left;
-        margin-left: -1%;
-    }
-    footer .container-info .info .text ul li{
-        padding: 5px;
-    }
-    footer .container-info .info .logo{
-        width: 0;
-    }
-    footer .container-info .info .text h1{
-        font-size: 315%;
-    }
-    footer .container-info .menu{
-        flex-basis: 20%;
-        display: flex;
-        flex-direction: column;
-        margin-right: 10%;
-    }
-    footer .container-info .menu ul:nth-child(2){
-        padding-left: 0%;
-    }
-}
