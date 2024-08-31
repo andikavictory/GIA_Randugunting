@@ -760,3 +760,12 @@ section.lokasi_pertanyaan .maps {
                 width: 2rem;
             }
         }
+
+        @media only screen and (max-width: 321px) {
+html{
+    font-size: 5px;
+}
+}
+
+
+        }
