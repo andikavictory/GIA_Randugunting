@@ -121,7 +121,7 @@ section.hero .efek-transparancy{
     background:linear-gradient(to bottom, rgb(255, 255, 255,0), rgb(255, 255, 255,1)100%);
     width: 100%;
     height: 35%;
-    bottom: 0%; 
+    bottom: -1%; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
@@ -205,9 +205,8 @@ section.visi_misi .foto{
     margin-left: 9%;
     margin-right: 9%;
     margin-top: 8.3rem;
-    width: 30%;
     height: auto;
-    width: 100%;
+    width: 90rem;
 }
 
 section.visi_misi .foto img{
@@ -289,7 +288,7 @@ section.jadwal .jadwal_content .item{
     margin-top: -3rem;
     padding: 1.4rem 1.4rem 1.4rem 1.4rem;
     border: 1px solid rgb(1, 85, 212);
-    border-radius: 40px 5px 40px 5px;
+    border-radius: 2.2rem 0.2rem 2.2rem 0.2rem;
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -404,7 +403,7 @@ section.galeri .judul{
     font-weight: bold;
     font-style: italic;
     color: #cbe1fa;
-    margin-top: -5.6%;
+    margin-top: -4%;
     padding: 1.5rem 0rem 1.5rem;
     width: 80vw;
     height: auto;
@@ -416,7 +415,7 @@ section.galeri .container-galeri{
     display: grid;
     margin-top: 2%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 18rem);
     gap:1.4rem;
     padding: 1.3rem;
     justify-content: center;
@@ -509,7 +508,7 @@ section.lokasi_pertanyaan .pertanyaan h1{
 
 section.lokasi_pertanyaan .pertanyaan .kotak_isian{
     margin: 0.6rem 1.5rem 0rem 4rem;
-    height: 46rem;
+    height: 50rem;
     background-color: rgb(1, 15, 77,0.1);
     position: relative;
     padding-top: 2rem; 
@@ -664,7 +663,7 @@ footer .copyright {
     display: flex;
     justify-content: center;
     padding:2% 0%;
-    font-size: 20px;
+    font-size: 1.6rem;
     font-style: italic;
 }
 @media only screen and (max-width: 1268px) {
@@ -682,7 +681,7 @@ footer .copyright {
         font-size: 7rem;
     }
     .hero .button {
-        bottom:15%;
+        bottom:15%; 
     }
     section.visi_misi{
         flex-direction: column;
@@ -697,18 +696,67 @@ footer .copyright {
         padding-right: 3%;
     }
 }
+@media only screen and (max-width: 1024px) {
+html{
+    font-size: 11px;
+}
+section.galeri .judul{
+    margin-top: -4.5%;
+}
+}
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 8px;
+    }
+section.lokasi_pertanyaan{
+    flex-direction: column;
+    align-items: center;
+    height: 120rem;
+}
+section.lokasi_pertanyaan .maps {
+    width: 75rem;
+    padding-bottom: 3rem;
+    }
+    section.lokasi_pertanyaan .pertanyaan {
+        width: 75rem;
+        }
+        section.lokasi_pertanyaan .pertanyaan .kotak_isian {
+            width: 50rem;
+            margin: 0px 0px 0px 2%;
+            height: 54rem;
+            }
+            section.visi_misi .foto {
+                width: 28rem;
+            }
+    }
 
-@media only screen and (max-width: 995px) {
-    .hero .hero-content h1 {
-        font-size: 6rem;
+@media only screen and (max-width: 426px) {
+    html{
+        font-size: 6px;
+    }
+    section.hero {
+        height: 100vh;
+    }
+    section.hero .hero-content{
+        padding-top: 20rem;
     }
     .hero .button {
-        bottom:13%;
+        bottom: 33%;
     }
-    nav .menu ul li {
-        padding: 0px 1rem 1.5rem;
+    section.lokasi_pertanyaan .maps {
+        width: 60rem;
+        padding-bottom: 3rem;
+        }
+        section.lokasi_pertanyaan .pertanyaan {
+            width: 50rem;
     }
-    .hero .hero-content h3 {
-        padding: 0% 5%;
-    }
-    }
+    footer .container-info .info .logo {
+        display:none;
+            }
+            footer .container-info .info{
+                margin-left: 4%;
+            }
+            footer .container-info .info ul li svg {
+                width: 2rem;
+            }
+        }
