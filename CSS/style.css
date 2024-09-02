@@ -702,7 +702,7 @@ section.lokasi_pertanyaan .maps {
         font-size: 8px;
     }
 section.lokasi_pertanyaan .maps {
-    width: 75rem;
+    width: 28rem;
     padding-bottom: 3rem;
     }
     section.lokasi_pertanyaan .pertanyaan {
@@ -728,6 +728,11 @@ section.lokasi_pertanyaan .maps {
     nav .logo .hamburger_menu{
         display: block;
         stroke: #f4f4f4;
+    }
+    nav .logo svg{
+        display: inline-block;
+        width: 2.8rem;
+        height: auto;
     }
     nav{
         padding: 2rem 0.5rem;
@@ -756,6 +761,9 @@ section.lokasi_pertanyaan .maps {
     }
     nav .search svg {
         width: 50%;
+    
+    }section.lokasi_pertanyaan{
+        height: 100rem;;
     }
     section.lokasi_pertanyaan .maps {
         width: 60rem;
@@ -764,7 +772,89 @@ section.lokasi_pertanyaan .maps {
         section.lokasi_pertanyaan .pertanyaan {
             width: auto;
             }
-}
+            .hero .hero-content h2 {
+                font-size: 2.5rem;
+                margin-bottom: 5rem;
+            }
+            .hero .hero-content h4 {
+                padding: 0% 2rem;
+            }
+            .hero .hero-content h1 {
+                font-size: 4.5rem;
+            }
+            .hero .hero-content h3 {
+                padding: 0% 2rem;
+            }
+            section.visi_misi .foto {
+                width: 26rem;
+            }
+            section.jadwal .jadwal_content {
+                padding-top: 17rem;
+            }
+            section.galeri .container-galeri {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 2%;
+                padding: 1.3rem;
+                justify-content: center;
+                width: 80%;
+            }
+            section.galeri .container-galeri .img-container{
+                width: 100rem;
+                height: 25rem;
+            }
+            section.lokasi_pertanyaan .maps {
+                width: 28rem;
+                padding-bottom: 3rem;
+                }
+                section.lokasi_pertanyaan .pertanyaan {
+                    width: 28rem;
+                    }
+                    section.lokasi_pertanyaan .pertanyaan .kotak_isian {
+                        width: 50rem;
+                        margin: 0px 0px 0px 2%;
+                        height: 43rem;
+                        }
+                        footer .container-info .info{
+                            padding-left: 1rem;
+                            align-items: baseline;
+                            padding-top: 1rem;
+                        }
+                        footer .container-info .info .logo{
+                            display: none;
+                        }
+                        footer .container-info .info .text h1 {
+                            font-size: 2.4rem;
+                        }
+                        footer .container-info .info .text h2 {
+                            font-size: 1.2rem;
+            }
+            footer .container-info .info ul{
+                padding-top: 20%;
+                justify-content:left;
+                margin-left: 0%;
+            }
+            footer .container-info .info ul li {
+                padding: 0% 0%;
+                align-items: center;
+                font-size: 1.9rem;
+                margin: 2% 0.4%;        
+        }
+        footer .container-info .menu {
+        flex-direction: column;
+        padding-left: 4rem;
+        }
+        footer .container-info .menu ul li {
+            padding: 5% 5%;
+            font-size: 1.7rem;
+        }
+        footer .container-info .menu ul:nth-child(2) {
+            margin-top: 20%;
+            padding-left:0%;
+        }
+        footer .copyright{
+            font-size: 1rem;
+        }
         @media only screen and (max-width: 321px) {
 html{
     font-size: 5px;
