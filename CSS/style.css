@@ -97,7 +97,7 @@ nav .search{
 }
 nav .search svg{
     stroke: #F5F5F5;
-    width: 13%;
+    width: 2.5rem;
     height: auto;
 
 }
@@ -693,7 +693,7 @@ section.lokasi_pertanyaan{
     padding-bottom: 3rem;
 }
 section.lokasi_pertanyaan .maps {
-    width: 75rem;
+    width: 90%;
     padding-bottom: 3rem;
     }
 }
@@ -702,16 +702,16 @@ section.lokasi_pertanyaan .maps {
         font-size: 8px;
     }
 section.lokasi_pertanyaan .maps {
-    width: 28rem;
+    width: 90vw;
     padding-bottom: 3rem;
     }
     section.lokasi_pertanyaan .pertanyaan {
-        width: 75rem;
+        width: auto;
         }
         section.lokasi_pertanyaan .pertanyaan .kotak_isian {
-            width: 50rem;
+            width: 60vw;
             margin: 0px 0px 0px 2%;
-            height: 54rem;
+            height: 55rem;
             }
             section.visi_misi .foto {
                 width: 28rem;
@@ -763,71 +763,78 @@ section.lokasi_pertanyaan .maps {
         width: 50%;
     
     }section.lokasi_pertanyaan{
-        height: 100rem;;
+        height: 80rem;
+    }
+    .hero .hero-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+    .hero .hero-content h4 {
+        padding: 0% 2rem;
+    }
+    .hero .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    .hero .hero-content h3 {
+        padding: 0% 2rem;
+    }
+    section.visi_misi .foto {
+        width: 26rem;
+    }
+    section.jadwal .jadwal_content {
+        padding-top: 17rem;
+    }
+    section.galeri .container-galeri {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2%;
+        padding: 1.3rem;
+        justify-content: center;
+        width: 80%;
+    }
+    section.galeri .container-galeri .img-container{
+        width: 100rem;
+        height: 25rem;
     }
     section.lokasi_pertanyaan .maps {
-        width: 60rem;
+        width: 120%;
         padding-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+    section.lokasi_pertanyaan {
+        padding-bottom: 0%;
+        height: 75rem;
+    }
+    section.lokasi_pertanyaan .pertanyaan {
+        width: 28rem;
         }
-        section.lokasi_pertanyaan .pertanyaan {
-            width: auto;
+        section.lokasi_pertanyaan .pertanyaan .kotak_isian {
+            width: 50rem;
+            margin: 0px 0px 0px 2%;
+            height: 32rem;
             }
-            .hero .hero-content h2 {
-                font-size: 2.5rem;
-                margin-bottom: 5rem;
+            section.lokasi_pertanyaan .pertanyaan .kotak_isian textarea {
+                height: 30%;
             }
-            .hero .hero-content h4 {
-                padding: 0% 2rem;
+            section.lokasi_pertanyaan .pertanyaan .kotak_isian .btn_kirim {
+                font-size: 2rem;
+                padding: 1%;
+                border-radius: 0.8rem;
             }
-            .hero .hero-content h1 {
-                font-size: 4.5rem;
+            
+            footer .container-info .info{
+                padding-left: 1rem;
+                align-items: baseline;
+                padding-top: 1rem;
             }
-            .hero .hero-content h3 {
-                padding: 0% 2rem;
+            footer .container-info .info .logo{
+                display: none;
             }
-            section.visi_misi .foto {
-                width: 26rem;
+            footer .container-info .info .text h1 {
+                font-size: 2.4rem;
             }
-            section.jadwal .jadwal_content {
-                padding-top: 17rem;
-            }
-            section.galeri .container-galeri {
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 2%;
-                padding: 1.3rem;
-                justify-content: center;
-                width: 80%;
-            }
-            section.galeri .container-galeri .img-container{
-                width: 100rem;
-                height: 25rem;
-            }
-            section.lokasi_pertanyaan .maps {
-                width: 28rem;
-                padding-bottom: 3rem;
-                }
-                section.lokasi_pertanyaan .pertanyaan {
-                    width: 28rem;
-                    }
-                    section.lokasi_pertanyaan .pertanyaan .kotak_isian {
-                        width: 50rem;
-                        margin: 0px 0px 0px 2%;
-                        height: 43rem;
-                        }
-                        footer .container-info .info{
-                            padding-left: 1rem;
-                            align-items: baseline;
-                            padding-top: 1rem;
-                        }
-                        footer .container-info .info .logo{
-                            display: none;
-                        }
-                        footer .container-info .info .text h1 {
-                            font-size: 2.4rem;
-                        }
-                        footer .container-info .info .text h2 {
-                            font-size: 1.2rem;
+            footer .container-info .info .text h2 {
+                font-size: 1.2rem;
             }
             footer .container-info .info ul{
                 padding-top: 20%;
@@ -839,24 +846,53 @@ section.lokasi_pertanyaan .maps {
                 align-items: center;
                 font-size: 1.9rem;
                 margin: 2% 0.4%;        
-        }
-        footer .container-info .menu {
-        flex-direction: column;
-        padding-left: 4rem;
-        }
-        footer .container-info .menu ul li {
+            }
+            footer .container-info .menu {
+            flex-direction: column;
+            padding-left: 4rem;
+            }
+            footer .container-info .menu ul li {
             padding: 5% 5%;
             font-size: 1.7rem;
-        }
-        footer .container-info .menu ul:nth-child(2) {
+            }
+            footer .container-info .menu ul:nth-child(2) {
             margin-top: 20%;
             padding-left:0%;
-        }
-        footer .copyright{
+            }
+            footer .copyright{
             font-size: 1rem;
-        }
-        @media only screen and (max-width: 321px) {
+            }
+}
+@media only screen and (max-width: 426px) {
 html{
-    font-size: 5px;
+    font-size: 10px;
+}
+section.lokasi_pertanyaan .maps {
+    width: 110%;
 }
 }
+@media only screen and (max-width: 320px) {
+    section.visi_misi .foto {
+        width: 20rem;
+    }
+    section.visi_misi .content {
+        padding-top: 2rem;
+    }
+    section.lokasi_pertanyaan .maps {
+        width: 135%;
+    }
+    footer .container-info .info .text h1 {
+        font-size: 2.2rem;
+        padding-top: 2rem;
+    }
+    footer .container-info .info .text h2 {
+        font-size: 1rem;
+    }
+    footer .container-info .info ul{
+        padding-bottom: 1rem;
+    }
+    footer .container-info .info ul li {
+        font-size: 1.5rem;
+    }
+}
+    
