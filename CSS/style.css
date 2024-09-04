@@ -121,7 +121,9 @@ section.hero {
     background-size: cover;
     display: flex;
 }
-
+section.hero .hero-content{
+    margin-top: -1rem;
+}
 section.hero .efek-transparancy{
     position:absolute;
     background:linear-gradient(to bottom, rgb(255, 255, 255,0), rgb(255, 255, 255,1)100%);
@@ -628,7 +630,7 @@ footer .container-info .info ul li{
 footer .container-info .info ul li:nth-child(2){
     margin-right: 6%;
 }
-footer .container-info .info ul li:hover,li:hover svg{
+footer .container-info .info ul li:hover{
     color: #ffffff;
     cursor: pointer;
     stroke: #ffffff;
@@ -870,7 +872,15 @@ html{
 section.lokasi_pertanyaan .maps {
     width: 110%;
 }
+footer .container-info .info ul li:nth-child(2) {
+    margin-right: 10vw;
 }
+}
+@media only screen and (max-width: 375px) {
+    footer .container-info .info ul li {
+        font-size: 4.5vw;
+    }
+    }
 @media only screen and (max-width: 320px) {
     section.visi_misi .foto {
         width: 20rem;
